@@ -1,3 +1,5 @@
+# sources
+# https://www.w3schools.com/python/python_regex.asp
 import re
 
 lines_text = []
