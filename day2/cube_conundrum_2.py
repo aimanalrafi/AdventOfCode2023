@@ -45,7 +45,7 @@ def check_highest_rgb(game_to_check):
     for element in game_to_check:
         print(f"element: {element}")
 
-        pattern = r"(\d+) (red|green|blue)"
+        pattern = r"\s?(\d+)\s?(red|green|blue)"
         counts = re.findall(pattern, element)
 
         print(f"counts: {counts}")
@@ -70,4 +70,5 @@ result = 0
 for i in range(len(processed_list_2)):
     result = result + check_highest_rgb(processed_list_2[i])
 
+# result = 63711
 print(f"result = {result}")
